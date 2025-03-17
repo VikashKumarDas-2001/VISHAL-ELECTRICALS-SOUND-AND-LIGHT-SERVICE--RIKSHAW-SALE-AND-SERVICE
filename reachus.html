@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REACH US</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style1.css" /> <!-- Linking the external CSS -->
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1>REACH US</h1>
+
+    <!-- Flash messages -->
+    <div id="flash-messages">
+        <!-- Example: Add dynamic messages here using JavaScript or backend -->
+        <!-- <div class="alert alert-success">Login successful!</div> -->
+    </div>
+
+    <form action="/login" method="POST" class="login-form">
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" class="form-control" required />
+            <div class="invalid-feedback" id="email-error"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" class="form-control" required />
+            <div class="invalid-feedback" id="password-error"></div>
+        </div>
+
+        <!-- <button type="submit" class="btn btn-primary">Login</button> -->
+        <a href="/register" class="btn btn-info mt-4">SUBMIT</a>
+    </form>
+</div>
+
+</body>
+</html>

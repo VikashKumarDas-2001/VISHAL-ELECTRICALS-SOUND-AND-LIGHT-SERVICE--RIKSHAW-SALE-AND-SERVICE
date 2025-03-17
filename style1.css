@@ -1,0 +1,102 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Centering the form */
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling form elements */
+.login-form .form-control {
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.btn-info:hover {
+    background-color: #117a8b;
+}
+
+/* Error message styling */
+.invalid-feedback {
+    color: #dc3545;
+    font-size: 14px;
+}
+
+/* ✅ Mobile-Friendly Adjustments */
+@media (max-width: 576px) {
+    .container {
+        width: 90%; /* Take more width on smaller screens */
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .login-form .form-control {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .btn-primary,
+    .btn-info {
+        font-size: 14px;
+        padding: 8px;
+        width: 100%; /* Make buttons full width on smaller screens */
+        margin-top: 10px;
+    }
+
+    .invalid-feedback {
+        font-size: 12px;
+    }
+}
+
+/* ✅ Tablet Adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 80%; /* Adjust width for tablets */
+    }
+}
+
+/* ✅ Small Desktop Adjustments */
+@media (max-width: 992px) {
+    .container {
+        width: 70%;
+    }
+}
